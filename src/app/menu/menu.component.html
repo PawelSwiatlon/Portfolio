@@ -1,0 +1,41 @@
+<div class="box">
+  <div class="logo">
+    <p>Paweł Światłoń</p>
+  </div>
+  <div class="nav"
+       [class]="showMenu? 'closeMenu':''"
+       (click)="showMenu = !showMenu">
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+  <div class="nav_items" [class]="showMenu? 'showMenu':''">
+    <div class="nav_item">
+      <p routerLink="home"
+         routerLinkActive="active"
+         [class]="showMenu? 'animated':''">
+        Home
+      </p>
+    </div>
+    <div class="nav_item">
+      <p routerLink="home" routerLinkActive="active">
+        Resume
+      </p>
+    </div>
+    <div class="nav_item">
+      <p routerLink="home" routerLinkActive="active">
+        Service
+      </p>
+    </div>
+    <div class="nav_item">
+      <p routerLink="home" routerLinkActive="active">
+        Portfolio
+      </p>
+    </div>
+    <div class="nav_item">
+      <p routerLink="home" routerLinkActive="active">
+        Contact
+      </p>
+    </div>
+  </div>
+</div>
