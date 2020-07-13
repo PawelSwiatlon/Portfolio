@@ -98,7 +98,7 @@
   position: absolute;
   top: 0;
   right: -100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   padding-top: 20vh;
   opacity: 0;
 }

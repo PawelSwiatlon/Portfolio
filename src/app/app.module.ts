@@ -13,7 +13,7 @@ import { MenuComponent } from './menu/menu.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'resume', component: ResumeComponent },
-  { path: 'services', component: ServiceComponent },
+  { path: 'service', component: ServiceComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: HomeComponent }
