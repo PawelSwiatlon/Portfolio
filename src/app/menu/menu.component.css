@@ -12,6 +12,8 @@
   justify-content: space-around;
   align-items: center;
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px 1px black;
 }
 .logo {
   font-size: 30px;
@@ -69,6 +71,9 @@
 .nav:hover {
   transform: scale(1.2);
 }
+.nav:hover p {
+  background-color: #007bff;
+}
 .nav p {
   width: 100%;
   height: 2px;
@@ -110,7 +115,61 @@
 }
 .nav_item p {
   cursor: pointer;
+  transition: 0.3s linear;
+  position: relative;
+  padding: 0 3px;
+}
+.nav_item p::before {
+  left: 50%;
+  top: 0;
+  border-top: 2px;
+  border-left: 0px;
+  border-bottom: 0;
+  border-right: 0;
+  transform: translateX(-50%);
+}
+.nav_item p::after {
+  right: 50%;
+  bottom: -2px;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 2px;
+  border-right: 0px;
+  transform: translateX(50%);
+}
+.nav_item p::before, .nav_item p::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-color: #fff;
+  border-style: solid;
+  transition: 0.3s linear;
+}
+.nav_item p:hover::before, .nav_item p:hover::after {
+  width: 100%;
+  height: 60%;
+  border-color: #007bff;
+}
+.nav_item p:hover {
+  transform: scale(1.2);
+  color: #007bff;
+  letter-spacing: 2px;
 }
 .animated {
   opacity: 1;
+}
+.active {
+  color: #007bff;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 786px) {
+  .logo {
+    font-size: 20px;
+  }
+  .nav {
+    width: 25px;
+    height: 25px;
+  }
 }

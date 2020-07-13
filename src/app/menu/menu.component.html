@@ -13,27 +13,35 @@
     <div class="nav_item">
       <p routerLink="home"
          routerLinkActive="active"
-         [class]="showMenu? 'animated':''">
+         (click)="showMenu = !showMenu">
         Home
       </p>
     </div>
     <div class="nav_item">
-      <p routerLink="home" routerLinkActive="active">
+      <p routerLink="resume"
+         routerLinkActive="active"
+         (click)="showMenu = !showMenu">
         Resume
       </p>
     </div>
     <div class="nav_item">
-      <p routerLink="home" routerLinkActive="active">
+      <p routerLink="service"
+         routerLinkActive="active"
+         (click)="showMenu = !showMenu">
         Service
       </p>
     </div>
     <div class="nav_item">
-      <p routerLink="home" routerLinkActive="active">
+      <p routerLink="portfolio"
+         routerLinkActive="active"
+         (click)="showMenu = !showMenu">
         Portfolio
       </p>
     </div>
     <div class="nav_item">
-      <p routerLink="home" routerLinkActive="active">
+      <p routerLink="contact"
+         routerLinkActive="active"
+         (click)="showMenu = !showMenu">
         Contact
       </p>
     </div>
