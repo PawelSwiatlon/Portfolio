@@ -59,3 +59,7 @@
   cursor: pointer;
   color: #007bff;
 }
+.work_info .disable {
+  text-decoration: line-through;
+  color: #003268;
+}
