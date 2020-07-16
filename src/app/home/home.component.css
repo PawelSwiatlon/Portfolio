@@ -30,7 +30,7 @@
 }
 .box_home h1 {
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 4vw;
   position: relative;
   padding: 0 0.5vw;
   letter-spacing: 3px;
@@ -64,6 +64,17 @@
   border-color: #007bff;
   border-style: solid;
   transition: 0.5s linear;
+}
+@media only screen and (max-width: 768px) {
+  .box_home h3 {
+    font-size: 4vw;
+  }
+  .box_home h1 {
+    font-size: 5vw;
+  }
+  .box_home p {
+    font-size: 1.5vw;
+  }
 }
 @media only screen and (max-width: 425px) {
   .box_home h3 {

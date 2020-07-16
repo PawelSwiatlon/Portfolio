@@ -46,6 +46,7 @@
   width: 20%;
   border-radius: 5px;
   box-shadow: -4px -4px 0 #0065d1;
+  padding: 2px;
 }
 .work_info {
   margin-left: 1%;
@@ -59,7 +60,30 @@
   cursor: pointer;
   color: #007bff;
 }
-.work_info .disable {
-  text-decoration: line-through;
-  color: #003268;
+@media only screen and (max-width: 1024px) {
+  .work_box img {
+    width: 50%;
+  }
+  .work_info {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 786px) {
+  .work_box {
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
+  .work_box img {
+    margin-right: 0%;
+    width: 60%;
+  }
+  .work_info {
+    margin-left: 0%;
+    width: 60%;
+  }
+  .work_info h1 {
+    padding-top: 20px;
+    text-align: center;
+  }
 }

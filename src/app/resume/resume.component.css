@@ -18,6 +18,7 @@
   margin-right: 5%;
   border-radius: 20px;
   box-shadow: -5px -5px 0 #0065d1;
+  padding: 2px;
 }
 .about {
   margin-left: 5%;
@@ -79,8 +80,8 @@ h1, .about p, h1::after, img {
     padding: 50px 0;
   }
   .prof {
-    width: 250px;
-    height: 400px;
+    width: 270px;
+    height: 380px;
     margin-right: 0%;
   }
   .about {
